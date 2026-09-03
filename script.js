@@ -52,7 +52,7 @@ function goToTry() {
 
 // From try.html → question.html
 function goToQuestion() {
-    window.location.href = 'question.html';
+    window.location.href = 'Question.html';
 }
 
 // ============================================
