@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Your Answers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section id="review">
+  <div class="card">
+    <div class="heart">📝</div>
+    <h2>Review Your Answers</h2>
+    <p style="font-size:14px;color:#e9cbd2;margin-bottom:25px;">Please review your answers below before sending. You can edit any answer you'd like to change.</p>
+    
+    <div id="reviewContent">
+      <!-- Answers will be populated here -->
+    </div>
+
+    <div id="editFields" class="hidden" style="margin-top:20px;text-align:left;">
+      <div style="margin-bottom:15px;">
+        <label style="display:block;font-size:14px;color:#e9cbd2;margin-bottom:6px;">What you want us to be:</label>
+        <input type="text" id="editRelationship" style="width:100%;padding:12px;border-radius:8px;border:1px solid #ffffff22;background:#ffffff0b;color:#fff;font-size:16px;box-sizing:border-box;">
+      </div>
+      <div style="margin-bottom:15px;">
+        <label style="display:block;font-size:14px;color:#e9cbd2;margin-bottom:6px;">Time you're willing to try:</label>
+        <input type="text" id="editWeeks" style="width:100%;padding:12px;border-radius:8px;border:1px solid #ffffff22;background:#ffffff0b;color:#fff;font-size:16px;box-sizing:border-box;">
+      </div>
+      <div style="margin-bottom:15px;">
+        <label style="display:block;font-size:14px;color:#e9cbd2;margin-bottom:6px;">Final decision:</label>
+        <input type="text" id="editFinalDecision" style="width:100%;padding:12px;border-radius:8px;border:1px solid #ffffff22;background:#ffffff0b;color:#fff;font-size:16px;box-sizing:border-box;">
+      </div>
+      <button class="primary" onclick="updateAnswer()" style="width:100%;">✅ Update Answers</button>
+    </div>
+    
+    <div class="btns" style="margin-top:25px;">
+      <button class="primary" onclick="sendAllToWhatsApp()">📱 Send to WhatsApp</button>
+      <button class="secondary" onclick="window.history.back()">← Go Back</button>
+    </div>
+  </div>
+</section>
+
+    <footer>Made with honesty, hope & a little courage ❤️</footer>
+    <script src="script.js"></script>
+</body>
+</html>

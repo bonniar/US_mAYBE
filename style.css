@@ -1,0 +1,33 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:#120b12;color:#fff7f7;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:
+radial-gradient(circle at 15% 15%,#8e315f55,transparent 32%),
+radial-gradient(circle at 85% 80%,#d06b8750,transparent 30%),
+linear-gradient(145deg,#160b18,#321323 55%,#120a12)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.14;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:34px 34px}
+main{max-width:760px;margin:auto;padding:24px 18px 70px}
+section{min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:55px 8px}
+.card{width:100%;padding:28px;border:1px solid #ffffff22;background:#ffffff0b;backdrop-filter:blur(12px);border-radius:28px;box-shadow:0 20px 60px #0006}
+.heart{font-size:58px;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+a{color:inherit;text-decoration:none}
+h1{font-size:clamp(48px,13vw,88px);line-height:.95;margin:18px 0 22px;font-weight:500}
+h2{font-size:clamp(31px,8vw,52px);margin:0 0 20px;font-weight:500}
+p{font-family:system-ui,-apple-system,sans-serif;font-size:18px;line-height:1.7;color:#ffecef;margin:12px 0}
+.small{font-size:14px;color:#e9cbd2}
+.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:25px}
+button{border:0;border-radius:999px;padding:15px 23px;font-size:16px;font-weight:700;cursor:pointer;transition:.2s}
+.primary{background:#fff;color:#5b1734}
+.secondary{background:#ffffff16;color:#fff;border:1px solid #ffffff25}
+button:hover{transform:translateY(-2px)}
+.reason{padding:18px 0;border-bottom:1px solid #ffffff18;text-align:left}
+.reason:last-child{border-bottom:0}
+.reason strong{font-size:19px}
+.quote{font-size:23px;line-height:1.55;font-style:italic;margin:25px 0}
+.photo{width:100%;max-height:420px;object-fit:cover;border-radius:22px;margin-bottom:20px;box-shadow:0 15px 40px #0008}
+.hidden{display:none}
+#finalMessage{margin-top:25px}
+footer{text-align:center;font-family:system-ui,sans-serif;color:#d9b8c0;font-size:12px}
+.confetti{position:fixed;top:-20px;font-size:22px;pointer-events:none;animation:fall 3.5s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(600deg);opacity:0}}

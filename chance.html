@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can You Give Us a Chance?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section id="chance">
+  <div class="card">
+    <h2>One little question… ❤️</h2>
+    <p>Before we talk about how long, I just want to know one thing:</p>
+    <p class="quote"><strong>Can you give us a chance?</strong></p>
+    <div class="btns" id="chanceButtons">
+      <button class="primary" onclick="giveChance()">❤️ Yes, let’s try</button>
+      <button class="secondary" id="noButton" onclick="sayNo()">No 😭</button>
+    </div>
+    <div id="chanceResponse" class="hidden"></div>
+  </div>
+</section>
+
+<section id="weeksChoice" class="hidden" style="min-height:92vh">
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h2>Thank you for choosing to give us a chance.</h2>
+    <p>I want to reassure you about something before you choose the time.</p>
+    <p><strong>I’m not after your body.</strong> Yes, I’m attracted to you, and I won’t pretend I don't adore you, but that isn’t the reason I’m asking you to give us a chance.</p>
+    <p>If that was all I wanted, I wouldn’t be asking you to take time to get to know me, understand me, and see whether we can actually build something together. What I’m interested in is <strong>you as a person</strong> your personality, your thoughts, your heart, the way you see things, and the connection we can create.</p>
+    <p>And I know it’s still early. I’m not saying I already know that we’re going to work. <strong>Neither of us can know that yet.</strong> That’s exactly why I’m asking you to give us a chance  not to promise me anything, but to let us find out together.</p>
+    <p class="quote">“I’m not asking for your body. I’m asking for a chance to know your heart and see what we could build from the start.” ❤️</p>
+    <p>Now, how much time would you like to give us to genuinely try?</p>
+    <div class="btns" id="weeks">
+      <button class="primary" onclick="chooseWeeks(1)">1 week ❤️</button>
+      <button class="primary" onclick="chooseWeeks(2)">2 weeks ❤️</button>
+      <button class="primary" onclick="chooseWeeks(3)">3 weeks ❤️</button>
+      <button class="primary" onclick="chooseWeeks(4)">4 weeks ❤️</button>
+    </div>
+    <p class="small">You choose the time. No pressure and no promise beyond what you feel comfortable giving.</p>
+  </div>
+  
+</section>
+
+
+    <footer>Made with honesty, hope & a little courage ❤️</footer>
+    <script src="script.js"></script>
+</body>
+</html>
